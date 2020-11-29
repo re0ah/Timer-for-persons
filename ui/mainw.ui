@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>6666</width>
+    <height>6666</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #bdbdbd; border: 2px solid #111111;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <widget class="QListWidget" name="list_widget">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #D0D0D0;
+border: 2px solid #111111;</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="le_add_person">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }
+QLineEdit:hover {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+           </property>
+           <property name="placeholderText">
+            <string>Имя человека:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_add_person">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+           </property>
+           <property name="text">
+            <string>Добавить человека</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_delete_person">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+           </property>
+           <property name="text">
+            <string>Удалить человека</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="le_add_time">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }
+QLineEdit:hover {
+	background: #E0E0E0;
+	border: 2px solid #666666;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #000000;
+ }</string>
+           </property>
+           <property name="placeholderText">
+            <string>Время в минутах:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_add_time">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+           </property>
+           <property name="text">
+            <string>Добавить время</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_sub_time">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background: #cdcdcd;
+	border: 2px solid #F9F9F9;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #111111;
+	border-right-color: #111111;
+	color: #111111;
+ }
+QPushButton:pressed {
+	background: #aaaaaa;
+	border: 2px solid #111111;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-bottom-color: #F9F9F9;
+	border-right-color: #F9F9F9;
+	color: #333333;
+ }
+QPushButton:hover {
+	background: #aaaaaa;
+	color: #333333;
+ }</string>
+           </property>
+           <property name="text">
+            <string>Отнять время</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_volume">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">padding-bottom: 3px;
+background: #bdbdbd;
+border: None;</string>
+         </property>
+         <property name="text">
+          <string>Громкость уведомления:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="volume_slider">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #bdbdbd;
+border: None;</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
